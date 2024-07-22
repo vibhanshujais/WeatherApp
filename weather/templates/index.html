@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="city">City </label>
+        <input type="text" name="city" id="city">
+    </form>
+    <section>
+        {% if er %}
+            <h3>{{er}}</h3>
+        {% endif %}
+        <table>
+            <tr>
+                <td>country code:</td>
+                <td>{{key.country_code}}</td>
+            </tr>
+            <tr>
+                <td>Coordinate</td>
+                <td>{{key.coordinate}}</td>
+            </tr>
+            <tr>
+                <td>Temperature </td>
+                <td>{{key.temp}}</td>
+            </tr>
+            <tr>
+                <td>Pressure</td>
+                <td>{{key.pressure}}</td>
+            </tr>
+            <tr>
+                <td>Humidity</td>
+                <td>{{key.humidity}}</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
